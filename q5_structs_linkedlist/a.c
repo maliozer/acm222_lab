@@ -8,14 +8,11 @@ struct student {
 } s;
 
 int main(){
-    char input_text[20];
     printf("Enter information:\n");
     printf("Enter name: ");
-    //!
-    
-    scanf("%s", s.name);
-    //fgets(s.name, sizeof(s.name), stdin);
 
+    scanf("%s", s.name);
+    
     printf("Enter roll number: ");
     scanf("%d", &s.roll);
     printf("Enter marks: ");
