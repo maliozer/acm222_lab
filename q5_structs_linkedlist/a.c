@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 struct student {
     char name[50];
     int roll;
@@ -6,11 +8,13 @@ struct student {
 } s;
 
 int main(){
-
+    char input_text[20];
     printf("Enter information:\n");
     printf("Enter name: ");
     //!
-    fgets(s.name, sizeof(s.name), stdin);
+    
+    scanf("%s", s.name);
+    //fgets(s.name, sizeof(s.name), stdin);
 
     printf("Enter roll number: ");
     scanf("%d", &s.roll);
